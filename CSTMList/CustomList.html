@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make your Plan!</title>
+    <link rel="stylesheet" type="text/css" href="ListDes.css">
+    <link rel="shortcut icon" type="image/x-icon" href="webicon.png">
+</head>
+<body>
+
+    <nav>
+      <font face="Comics Sans MS" size="6"><label class="logo">My Custom Planlist</label></font>
+      <div class="hover-me">
+      <img src="convertdoc.png" onclick="window.print()">
+      <span id="pop-up">Print table</span>
+    </div>
+    </nav>
+
+    <div class="containerA">
+      <div class="enter">
+        <input class="int" type="text"  id="Pname" placeholder="Enter Product Name" value="">
+        <input class="int" type="number" id="Pquantity" placeholder="Enter Quantity" value="">
+        <input class="int" type="number" id="Pprice" placeholder="Enter Price" value="">
+        <button onclick="addrow()" id="clr" class="btn-add">Add Product</button>
+      </div>
+        
+        <table id="deltab" border="2" class="tab">
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price (₱)</th>
+            <th>  </th>
+          </tr>
+
+        </table>
+        <br>
+        <button onclick="total()" class="btn-val">Total Price</button>
+        <span id="AllVal"></span>
+      
+    </div>
+     
+    <script src="AppSystem.js"></script>
+</body>
+</html>
